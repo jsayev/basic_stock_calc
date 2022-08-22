@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="stock_calculator_container">
+            <div id="stockResult">
+                <div>
+                    <span id="total_payment">Total Payment: </span><span id="total_payment_value"></span>
+                </div>
+                <div>
+                    <span id="total_stocks_bought">Total stocks bought: </span><span id="total_stocks_count"></span>
+                </div>
+                <div>
+                    <span id="average_payment">Average of stock prices: </span><span id="average_stock_price"></span>
+                </div>
+            </div>
+            <div class="stock_piece">
+                <label for="stock_count_1">Stock count:</label>
+                <input type="number" min="0" id="stock_count_1">
+                <label for="stock_price_1">Stock price:</label>
+                <input type="number" id="stock_price_1">
+            </div>
+            <div class="stock_piece">
+                <label for="stock_count_2">Stock count:</label>
+                <input type="number" min="0" id="stock_count_2">
+                <label for="stock_price_2">Stock price:</label>
+                <input type="number" id="stock_price_2">
+            </div>
+        </div>
+        <button id="addNew">Add new</button>
+        <button id="calcBtn">Calculate</button>
+    </div>
+    <script src="calculateStock.js"></script>
+    <script src="addStock.js"></script>
+</body>
+
+</html>
